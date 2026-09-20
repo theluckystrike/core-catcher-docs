@@ -27,7 +27,7 @@ internal/
   banner/                  # Animated startup banner (Bubble Tea)
   config/                  # Env-based config loading, slog setup
   catcher/                 # Catcher interface (Redis consumer + Mock)
-dagger/                    # CI functions (Lint, Build, Test, IntegrationTest, Scan)
+dagger/                    # CI functions (Lint, Build, Test, IntegrationTest); Scan runs locally via task build-scan-image-ko
 kcl/                       # KCL deployment manifests (Kubernetes)
 tests/                     # Test data (integration test messages, deploy profiles)
 .ko.yaml                   # ko build configuration
