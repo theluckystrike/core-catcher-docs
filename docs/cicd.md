@@ -34,7 +34,7 @@ The `dagger/` module provides:
 | `Lint` | Go linting via golangci-lint |
 | `Build` | Build Go binary |
 | `BuildImage` | Build container image with ko |
-| `ScanImage` | Trivy vulnerability scan |
+| `ScanImage` | Trivy vulnerability scan, invoked locally by `task build-scan-image-ko`, not by CI |
 | `BuildAndTestBinary` | Build + Redis integration test |
 | `IntegrationTest` | Full e2e test with pitcher + Redis + catcher |
 
