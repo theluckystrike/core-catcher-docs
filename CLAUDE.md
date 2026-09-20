@@ -104,7 +104,9 @@ Redis Stream ──► RedisCatcher ──┬──► LogHandler (structured sl
 | `REDIS_ADDR` | `localhost` | Redis host |
 | `REDIS_PORT` | `6379` | Redis port |
 | `REDIS_PASSWORD` | *(empty)* | Redis password |
-| `REDIS_STREAM` | `messages` | Redis stream to consume from |
+| `REDIS_STREAM` | `messages` | Legacy single stream env var, still honored |
+| `REDIS_STREAMS` | *(empty)* | Comma separated list of streams, preferred over `REDIS_STREAM` |
+| `PORT` | `8080` | Web mode HTTP listen port |
 | `CONSUMER_GROUP` | `homerun2-core-catcher` | Consumer group name |
 | `CONSUMER_NAME` | hostname | Consumer name within the group |
 | `REDIS_STARTUP_TIMEOUT` | `120s` | How long startup retries Redis before exiting (Go duration) |
