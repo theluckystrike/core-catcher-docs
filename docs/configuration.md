@@ -9,7 +9,9 @@ All configuration is via environment variables, loaded once at startup.
 | `REDIS_ADDR`     | `localhost`                | Redis server address                 |
 | `REDIS_PORT`     | `6379`                     | Redis server port                    |
 | `REDIS_PASSWORD` | (empty)                    | Redis password                       |
-| `REDIS_STREAM`   | `messages`                 | Redis stream to consume from         |
+| `REDIS_STREAM`   | `messages`                 | Legacy single stream env var         |
+| `REDIS_STREAMS`  | (empty)                    | Comma separated list of streams, preferred over `REDIS_STREAM` |
+| `PORT`           | `8080`                     | Web mode HTTP listen port            |
 | `CONSUMER_GROUP`| `homerun2-core-catcher`     | Consumer group name                  |
 | `CONSUMER_NAME` | hostname                    | Consumer name within the group       |
 | `REDIS_STARTUP_TIMEOUT` | `120s`              | How long startup retries Redis before exiting (Go duration) |
