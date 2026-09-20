@@ -44,7 +44,9 @@ Taskfile.yaml              # Task runner
 | `REDIS_ADDR` | Redis server address | `localhost` |
 | `REDIS_PORT` | Redis server port | `6379` |
 | `REDIS_PASSWORD` | Redis password | (empty) |
-| `REDIS_STREAM` | Redis stream to consume from | `messages` |
+| `REDIS_STREAM` | Legacy single stream env var, still honored | `messages` |
+| `REDIS_STREAMS` | Comma separated list of streams, preferred over `REDIS_STREAM` | (empty) |
+| `PORT` | Web mode HTTP listen port | `8080` |
 | `CONSUMER_GROUP` | Consumer group name | `homerun2-core-catcher` |
 | `CONSUMER_NAME` | Consumer name within the group | hostname |
 | `REDIS_STARTUP_TIMEOUT` | How long startup retries Redis before exiting (Go duration) | `120s` |
